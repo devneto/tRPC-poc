@@ -9,6 +9,8 @@ const appRouter = trpc.router().query("hello", {
   },
 });
 
+export type AppRouter = typeof appRouter;
+
 const app = express();
 app.use(cors);
 const port = 8000;
